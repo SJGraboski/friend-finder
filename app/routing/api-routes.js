@@ -14,6 +14,8 @@ module.exports = function(app) {
 
 	// POST routes /api/friends, 
 	app.post('/api/friends', function(req, res){
-		res.send("Logic to come.");
+		// friendData.push(req.body);
+		console.log(req.body);
+		res.json(true);
 	});
 }

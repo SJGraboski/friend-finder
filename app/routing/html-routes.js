@@ -4,7 +4,7 @@ module.exports = function(app){
 
 	// get route to survey
 	app.get("/survey", function(req, res){
-		res.sendFile(path.join("/../../app/public/survey.html"));
+		res.sendFile(path.join(__dirname + "/../../app/public/survey.html"));
 	});
 
 	// use route to home

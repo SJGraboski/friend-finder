@@ -1,0 +1,39 @@
+#surveyButton {
+  margin: 150px auto 0 auto;
+  width: 180px;
+  display: block;
+}
+
+#surveyPage h1 {
+	font-size: 22px;
+	text-align: center;
+}
+
+#surveyPage h2 {
+	text-align: center;
+}
+
+/* Sticky Footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;/* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer p{
+	font-size:16px;
+	text-align: center;
+}

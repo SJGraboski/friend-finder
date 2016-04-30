@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey - Friend Finder</title>
+
+	<!-- Meyer Reset Stylesheet -->
+	<link rel='stylesheet' href='assets/css/reset.css'>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src='http://code.jquery.com/ui/1.11.4/jquery-ui.js'></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div class="container" id="surveyPage">
+
+		<!-- Jumbotron -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+				<div class="jumbotron">
+					<h1>Friend Finder</h1>
+					<h2>Survey</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+				<form action="/api/friends" method='POST' role="form">
+				
+				<h3>What's Your Name</h3>
+				<fieldset id="name">
+					<input type="text" name="name" placeholder="Name goes here">
+				</fieldset>
+
+				<h3>Give us a link to your photo</h3>
+				<fieldset id="name">
+					<input type="text" name="photo" placeholder="url goes here, thanks">
+				</fieldset>
+
+					<h4>Question 1: lorem impsum</h4>
+					<fieldset id="q1">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[1]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[1]" value="2">2</label>
+							<label class=[1]"radio-inline"><input type="radio" name="score[1]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[1]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[1]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 2: lorem impsum</h4>
+					<fieldset id="q2">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[2]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[2]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[2]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[2]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[2]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 3: lorem impsum</h4>
+					<fieldset id="q3">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[3]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[3]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[3]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[3]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[3]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 4: lorem impsum</h4>
+					<fieldset id="q4">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[4]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[4]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[4]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[4]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[4]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 5: lorem impsum</h4>
+					<fieldset id="q5">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[5]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[5]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[5]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[5]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[5]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 6: lorem impsum</h4>
+					<fieldset id="q6">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[6]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[6]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[6]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[6]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[6]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 7: lorem impsum</h4>
+					<fieldset id="q7">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[7]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[7]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[7]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[7]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[7]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 8: lorem impsum</h4>
+					<fieldset id="q8">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[8]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[8]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[8]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[8]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[8]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 9: lorem impsum</h4>
+					<fieldset id="q9">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[9]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[9]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[9]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[9]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[9]" value="5">5</label>
+						</div>
+					</fieldset>
+
+					<h4>Question 10: lorem impsum</h4>
+					<fieldset id="q10">
+						<div class="form-group">
+							<label class="radio-inline"><input type="radio" name="score[10]" value="1">1</label>
+							<label class="radio-inline"><input type="radio" name="score[10]" value="2">2</label>
+							<label class="radio-inline"><input type="radio" name="score[10]" value="3">3</label>
+							<label class="radio-inline"><input type="radio" name="score[10]" value="4">4</label>
+							<label class="radio-inline"><input type="radio" name="score[10]" value="5">5</label>
+						</div>
+					</fieldset>
+				
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- Sticky Footer -->
+	<div id="footer">
+		<p>Web App developed by Steve Graboski for Rutgers Coding Bootcamp &copy;2016.</p>
+	</div>
+
+	<script src='assets/js/survey.js'></script>
+	
+</body>
+</html>

@@ -16,7 +16,8 @@ var bodyParser = require('body-parser')
 var PORT = process.env.PORT || 8000;
 
 // set up static content
-var staticContentFolder = __dirname + 'app/public';
+var staticContentFolder = __dirname + '/app/public';
+console.log(staticContentFolder);
 app.use(express.static(staticContentFolder));
 
 // Middleware
