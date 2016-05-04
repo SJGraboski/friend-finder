@@ -27,24 +27,33 @@
 				<div class="jumbotron">
 					<h1>Friend Finder</h1>
 					<h2>Survey</h2>
+					<p>(your data will be saved online)</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-xs-12 col-sm-10 col-sm-offset-1">
-				<form id="survey">
-				
+		<form id="survey">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6">
 					<h3>What's Your Name</h3>
-					<fieldset id="name">
-						<input type="text" name="name" placeholder="Name goes here">
+					<fieldset id="name" class="form-group">
+						<input class="form-control" type="text" name="name" placeholder="Name goes here">
 					</fieldset>
+				</div>
+			</div>
 
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6">
 					<h3>Give us a link to your photo</h3>
-					<fieldset id="name">
-						<input type="text" name="photo" placeholder="Enter photo url">
+					<fieldset id="photo" class="form-group">
+						<input class="form-control" type="text" name="photo" placeholder="Enter photo url">
 					</fieldset>
+				</div>
+			</div>
 
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6">
 					<h4>Question 1: On a scale of 1-5, how would you rate Purple Rain (the soundtrack)</h4>
 					<fieldset id="q1">
 						<div class="form-group">
@@ -156,6 +165,9 @@
 					</fieldset>
 				
 					<button id="theButton" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+					<div id="errors">
+					<!-- Error messages go here -->
+					</div>
 				</form>
 			</div>
 		</div>
@@ -167,7 +179,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">We found your nearest friend!</h4>
+	        <h4 class="modal-title" id="myModalLabel"><!--Message--></h4>
 	      </div>
 	      <div class="modal-body" id="friend-info">
 	        <!-- Friend Info goes here -->

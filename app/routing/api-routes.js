@@ -1,7 +1,5 @@
 // Load the data
 var friendData = require('../data/friends.json');
-console.log(friendData);
-
 
 // export to the express app
 module.exports = function(app) {

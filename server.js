@@ -2,9 +2,6 @@
  *  -Steve G, Homework for Rutgers Coding Bootcamp
  ================================================= */
 
-// 1. Dependencies and Global Vars
-// ===============================
-
 // express
 var express = require('express');
 var app = express();

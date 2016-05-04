@@ -1,3 +1,19 @@
+/* Basic Rules */
+body {
+	background-image: url("../img/asanoha-400px.png");
+}
+.jumbotron {
+	text-align: center;
+}
+
+/* survey rules */
+form#survey{
+	padding-bottom:30px;
+}
+
+input.form-control{
+	margin-bottom:8px;
+}
 #surveyButton {
   margin: 150px auto 0 auto;
   width: 180px;
@@ -5,12 +21,50 @@
 }
 
 #surveyPage h1 {
-	font-size: 22px;
+	font-size: 30px;
 	text-align: center;
+	margin-bottom:0px;
 }
 
 #surveyPage h2 {
+	font-size: 42px;
 	text-align: center;
+	margin-top:5px;
+}
+
+h4{
+	line-height: 125%;
+	margin-top: 20px;
+}
+
+/* modal rules*/
+h5.friendHeadline {
+	text-align: center;
+	font-size:16px;
+}
+
+img.friendPhoto
+{
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    height: 60%;
+    width: auto;
+    border-radius: 60px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+div.modal-body{
+    position: relative;
+    padding: 15px;
+    height: 200px;
+}
+
+/* errors */
+.missing {
+    margin-top: -10px;
+    color: crimson;
 }
 
 /* Sticky Footer */
